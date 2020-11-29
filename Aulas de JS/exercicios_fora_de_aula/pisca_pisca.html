@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pisca Pisca Estrelinha</title>
+    <style>
+        div{
+            background: black;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        div#area1, div#area7, div#area13, div#area19 {
+            margin-top: -50px;
+            margin-left: 60px;
+        }
+        div#area2, div#area8, div#area14, div#area20 {
+            margin-top: -50px;
+            margin-left: 120px;
+        }
+        div#area3, div#area9, div#area15, div#area21{
+            margin-top: -50px;
+            margin-left: 180px;
+        }
+        div#area4, div#area10, div#area16, div#area22{
+            margin-top: -50px;
+            margin-left: 240px;
+        }
+        div#area5, div#area11, div#area17, div#area23 {
+            margin-top: -50px;
+            margin-left: 300px;
+        }
+        div#area6, div#area12, div#area18, div#area24 {
+            margin-top: 10px;
+        } 
+    </style>
+</head>
+<body>
+
+    <!--Primeira linha-->
+
+    <div id="area0" onmouseenter="Area0Entrada()" onmouseout="Area0Saida()"> </div>
+    <div id="area1" onmouseenter="Area1Entrada()" onmouseout="Area1Saida()"></div>
+    <div id="area2" onmouseenter="Area2Entrada()" onmouseout="Area2Saida()"></div>
+    <div id="area3" onmouseenter="Area3Entrada()" onmouseout="Area3Saida()"></div>
+    <div id="area4" onmouseenter="Area4Entrada()" onmouseout="Area4Saida()"></div>
+    <div id="area5" onmouseenter="Area5Entrada()" onmouseout="Area5Saida()"></div>
+    <div id="area6" onmouseenter="Area6Entrada()" onmouseout="Area6Saida()"></div>
+
+    <!--Segunda linha-->
+
+    <div id="area7" onmouseenter="Area7Entrada()" onmouseout="Area7Saida()"></div>
+    <div id="area8" onmouseenter="Area8Entrada()" onmouseout="Area8Saida()"></div>
+    <div id="area9" onmouseenter="Area9Entrada()" onmouseout="Area9Saida()"></div>
+    <div id="area10" onmouseenter="Area10Entrada()" onmouseout="Area10Saida()"></div>
+    <div id="area11" onmouseenter="Area11Entrada()" onmouseout="Area11Saida()"></div>
+
+    <!--Terceira linha-->
+
+    <div id="area12" onmouseenter="Area12Entrada()" onmouseout="Area12Saida()"></div>
+    <div id="area13" onmouseenter="Area13Entrada()" onmouseout="Area13Saida()"></div>
+    <div id="area14" onmouseenter="Area14Entrada()" onmouseout="Area14Saida()"></div>
+    <div id="area15" onmouseenter="Area15Entrada()" onmouseout="Area15Saida()"></div>
+    <div id="area16" onmouseenter="Area16Entrada()" onmouseout="Area16Saida()"></div>
+    <div id="area17" onmouseenter="Area17Entrada()" onmouseout="Area17Saida()"></div>
+
+    <!--Quarta linha-->
+
+    <div id="area18" onmouseenter="Area18Entrada()" onmouseout="Area18Saida()"></div>
+    <div id="area19" onmouseenter="Area19Entrada()" onmouseout="Area19Saida()"></div>
+    <div id="area20" onmouseenter="Area20Entrada()" onmouseout="Area20Saida()"></div>
+    <div id="area21" onmouseenter="Area21Entrada()" onmouseout="Area21Saida()"></div>
+    <div id="area22" onmouseenter="Area22Entrada()" onmouseout="Area22Saida()"></div>
+    <div id="area23" onmouseenter="Area23Entrada()" onmouseout="Area23Saida()"></div>
+
+    <script>
+
+    //variaveis...
+
+    const a0 = document.querySelector('div#area0')
+    const a1 = document.querySelector('div#area1')
+    const a2 = document.querySelector('div#area2')
+    const a3 = document.querySelector('div#area3')
+    const a4 = document.querySelector('div#area4')
+    const a5 = document.querySelector('div#area5')
+    const a6 = document.querySelector('div#area6')
+    const a7 = document.querySelector('div#area7')
+    const a8 = document.querySelector('div#area8')
+    const a9 = document.querySelector('div#area9')
+    const a10 = document.querySelector('div#area10')
+    const a11 = document.querySelector('div#area11')
+    const a12 = document.querySelector('div#area12')
+    const a13 = document.querySelector('div#area13')
+    const a14 = document.querySelector('div#area14')
+    const a15 = document.querySelector('div#area15')
+    const a16 = document.querySelector('div#area16')
+    const a17 = document.querySelector('div#area17')
+    const a18 = document.querySelector('div#area18')
+    const a19 = document.querySelector('div#area19')
+    const a20 = document.querySelector('div#area20')
+    const a21 = document.querySelector('div#area21')
+    const a22 = document.querySelector('div#area22')
+    const a23 = document.querySelector('div#area23')
+    
+    //funções...
+
+    function Area0Entrada() {
+        a0.style.background = 'red'
+        }
+    function Area0Saida() {
+        a0.style.background = 'black'
+    }
+    function Area1Entrada() {
+        a1.style.background = 'red'
+    }
+    function Area1Saida() {
+        a1.style.background = 'black'
+    }
+    function Area2Entrada() {
+        a2.style.background = 'red'
+    }
+    function Area2Saida() {
+        a2.style.background = 'black'
+    }
+    function Area3Entrada() {
+        a3.style.background = 'red'
+    }
+    function Area3Saida() {
+        a3.style.background = 'black'
+    }
+    function Area4Entrada() {
+        a4.style.background = 'red'
+    }
+    function Area4Saida() {
+        a4.style.background = 'black'
+    }
+    function Area5Entrada() {
+        a5.style.background = 'red'
+    }
+    function Area5Saida() {
+        a5.style.background = 'black'
+    }
+    function Area6Entrada() {
+        a6.style.background = 'red'
+    }
+    function Area6Saida() {
+        a6.style.background = 'black'
+    }
+    function Area7Entrada() {
+        a7.style.background = 'red'
+    }
+    function Area7Saida() {
+        a7.style.background = 'black'
+    }
+    function Area8Entrada() {
+        a8.style.background = 'red'
+    }
+    function Area8Saida() {
+        a8.style.background = 'black'
+    }
+    function Area9Entrada() {
+        a9.style.background = 'red'
+    }
+    function Area9Saida() {
+        a9.style.background = 'black'
+    }
+    function Area10Entrada() {
+        a10.style.background = 'red'
+    }
+    function Area10Saida() {
+        a10.style.background = 'black'
+    }
+    function Area11Entrada() {
+        a11.style.background = 'red'
+    }
+    function Area11Saida() {
+        a11.style.background = 'black'
+    }
+    function Area12Entrada() {
+        a12.style.background = 'red'
+    }
+    function Area12Saida() {
+        a12.style.background = 'black'
+    }
+    function Area13Entrada() {
+        a13.style.background = 'red'
+    }
+    function Area13Saida() {
+        a13.style.background = 'black'
+    }
+    function Area14Entrada() {
+        a14.style.background = 'red'
+    }
+    function Area14Saida() {
+        a14.style.background = 'black'
+    }
+    function Area15Entrada() {
+        a15.style.background = 'red'
+    }
+    function Area15Saida() {
+        a15.style.background = 'black'
+    }
+    function Area16Entrada() {
+        a16.style.background = 'red'
+    }
+    function Area16Saida() {
+        a16.style.background = 'black'
+    }
+    function Area17Entrada() {
+        a17.style.background = 'red'
+    }
+    function Area17Saida() {
+        a17.style.background = 'black'
+    }
+    function Area18Entrada() {
+        a18.style.background = 'red'
+    }
+    function Area18Saida() {
+        a18.style.background = 'black'
+    }
+    function Area19Entrada() {
+        a19.style.background = 'red'
+    }
+    function Area19Saida() {
+        a19.style.background = 'black'
+    }
+    function Area20Entrada() {
+        a20.style.background = 'red'
+    }
+    function Area20Saida() {
+        a20.style.background = 'black'
+    }
+    function Area21Entrada() {
+        a21.style.background = 'red'
+    }
+    function Area21Saida() {
+        a21.style.background = 'black'
+    }
+    function Area22Entrada() {
+        a22.style.background = 'red'
+    }
+    function Area22Saida() {
+        a22.style.background = 'black'
+    }
+    function Area23Entrada() {
+        a23.style.background = 'red'
+    }
+    function Area23Saida() {
+        a23.style.background = 'black'
+    }
+    </script>    
+</body>
+</html>

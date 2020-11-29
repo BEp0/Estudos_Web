@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 09 - Aprendendo D.O.M.</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+        strong {
+            color: black;
+        }
+        h1 {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>INICIANDO O DOM</h1>
+    <P>Aqui vai o resultado</P>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id = 'msg'>Click em mim</div>
+    <script>
+        window.document.write(document.charset) // DOM - mostra o UTF-8
+    // MARCA
+        var d = document.getElementById('msg') // pega a div msg
+        // var d = window.document.querySelector('div#msg')
+        var p1 = document.getElementsByTagName('p')[1] // pega 2° p
+        var corpo = document.body
+    //p1.style.color = 'black' // modifica a cor do p1 para preto
+        window.document.write(`<br>Está escrito assim: ${p1.innerText}`) // mostra o  p1, pega o texto sem filha
+        document.write(`<br>Porém, assim ele vem formatado ${p1.innerHTML}`) // formatado, pega tudo
+    // CORPO
+        //corpo.style.background = 'gray'
+               
+    </script>
+</body>
+</html>

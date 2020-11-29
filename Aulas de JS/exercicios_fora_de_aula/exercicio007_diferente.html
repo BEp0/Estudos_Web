@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input#number_one {
+            font: normal 18pt Arial;
+            width: 70px;
+            height: 20px;
+        }
+        input#number_two {
+            font: normal 18pt Arial;
+            width: 70px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>  
+    <h1>Calculando valores</h1>
+    <p>Me de dois números:</p>
+
+    <input type="number" name="number_one" id="number_one"> e
+    <input type="number" name="number_two" id="number_two"> 
+    
+    <p>Agora, escolha a operação matemática:</p>
+    
+    <input type="button" value="Somar" onclick="mais()">
+    <input type="button" value="Diminuir" onclick="menos()">
+    <input type="button" value="Multiplicar" onclick="vezes()">
+    <input type="button" value="Dividir" onclick="dividido()">
+    
+    <p id="Resposta">A resposta é</p>
+       
+    <script>
+        var number_one = document.getElementById('number_one')
+        var number_two = document.getElementById('number_two')
+
+        function mais() {
+            var n1 = Number(number_one.value)
+            var n2 = Number(number_two.value)
+            var resposta = n1 + n2
+            var soma = document.getElementById('Resposta')
+            var somador = soma.innerText = `A resposta é igual a ${resposta}`
+        }
+        function menos() {
+            var n1 = Number(number_one.value)
+            var n2 = Number(number_two.value)
+            var resposta = n1 - n2
+            var subtração = document.getElementById('Resposta')
+            var diminuicao = subtração.innerText = `A resposta é igual a ${resposta}`
+        }
+        function vezes() {
+            var n1 = Number(number_one.value)
+            var n2 = Number(number_two.value)
+            var resposta = n1 * n2
+            var mult = document.getElementById('Resposta')
+            var mu = mult.innerText = `A resposta é igual a ${resposta}`
+        }
+        function dividido() {
+            var n1 = Number(number_one.value)
+            var n2 = Number(number_two.value)
+            var resposta = n1 / n2
+            var div = document.getElementById('Resposta')
+            var divi = div.innerText = `A resposta é igual a ${resposta}`
+        }
+    </script>
+</body>
+</html>
