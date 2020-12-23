@@ -1,2 +1,2 @@
-# Estudos_de_JavaScript
- Repositório para compartilhar meu aprendizado sobre JS
+# Estudos_de_Web
+ Repositório para compartilhar meu aprendizado sobre as tecnologias HTML5, CSS3 E JS.
