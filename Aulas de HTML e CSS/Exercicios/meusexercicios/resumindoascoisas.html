@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,35 @@
         body {
             font: 12pt Arial;
         }
+        img {
+            width: 120pt;
+        }
     </style>
 </head>
+
 <body>
     <h1>Este documento é para exercitar tudo que aprendi até agora...</h1>
     <hr>
-    <p>Este é um exemplo de parágrafo, pode ser frito com a tag &lt;p&gt;.</p>
-    <p>Já, a tag &lt;hr&gt; faz essas linhas que tu estas vendo em cima e embaixo.</p>
+    <p>Este é um exemplo de parágrafo, pode ser frito com a tag <mark>&lt;p&gt;</mark>.</p>
+    <p>Já, a tag <mark>&lt;hr&gt;</mark> faz essas linhas que tu estas vendo em cima e embaixo.</p>
+    <p>Essas marcações são feitas com a tag <mark>&lt;mark&gt;</mark></p>
     <hr>
-
+    <h2>Podemos adicionar imagens com a tag <mark>&lt;img&gt;</mark></h2>
+    <p>E podemos colocar de 3 formas as imagens</p>
+    <ul type="square">
+        <li>
+            <p>O primeiro é na mesma página do meu arquivo... <mark>Apenas colocando no src o nome do arquivo</mark>...</p>
+            <img src="python-logo.png" alt="imagem Python">
+        </li>
+        <li>
+            <p>Outra forma é pegando uma imagem de uma pasta... Tem que colocar o nome da pasta antes do nome do arquivo</p>
+            <img src="imagens/python-logo.png" alt="imagem da pasta">
+        </li>
+        <li>
+            <p>A ultima forma é pegando da WEB, usando a URL no src</p>
+            <img src="https://avatars2.githubusercontent.com/u/72446326?s=460&u=a2681d3249b11c159b33060d33afcf77d4970d04&v=4" alt="minha foto">
+        </li>
+    </ul>
 </body>
+
 </html>
