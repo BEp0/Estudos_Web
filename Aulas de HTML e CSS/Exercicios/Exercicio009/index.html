@@ -9,7 +9,6 @@
         body {
             font: 12pt Arial;
         }
-
         mark#juntandoListas {
             background-color: red;
             color: white;
@@ -25,7 +24,7 @@
     </ul>
 
     <hr>
-    <h3>Lista Númerica</h3>
+    <h3><mark id="juntandoListas">Lista Númerica</mark></h3>
     <hr>
 
     <p>O <strong>type</strong> <em>indica o tipo de lista</em>.</p>
@@ -38,7 +37,7 @@
     </ol>
 
     <hr>
-    <h3>Alfabética</h3>
+    <h3><mark id="juntandoListas">Alfabética</mark></h3>
     <hr>
 
     <p>O <strong>A</strong> indica que a ordem vai ser alfabética e maiúscula.</p>
@@ -55,7 +54,7 @@
     </ol>
 
     <hr>
-    <h3>Romana</h3>
+    <h3><mark id="juntandoListas">Romana</mark></h3>
     <hr>
 
     <p>O <strong>I</strong> indica que a ordem vai ser em números romanos. Com a mesma lógica de maior e menos do
@@ -69,21 +68,21 @@
     <h2><mark>Listas não ordenadas...</mark></h2>
     <p>A ordem não faz diferença, também temos muitas opções...</p>
     <hr>
-    <p><strong>Type disc</strong>(padão) é a bolinha toda pintada.</p>
+    <p><strong><mark id="juntandoListas">Type disc</mark></strong>(padão) é a bolinha toda pintada.</p>
     <ul type="disc">
         <li>Acordar</li>
         <li>Banho</li>
         <li>Dentes</li>
     </ul>
     <hr>
-    <p><strong>Type circle</strong> é a bolinha com fundo branco.</p>
+    <p><strong><mark id="juntandoListas">Type circle</mark></strong> é a bolinha com fundo branco.</p>
     <ul type="circle">
         <li>Acordar</li>
         <li>Banho</li>
         <li>Dentes</li>
     </ul>
     <hr>
-    <p><strong>Type square</strong> é um quadradinho pintado de preto.</p>
+    <p><strong><mark id="juntandoListas">Type square</mark></strong> é um quadradinho pintado de preto.</p>
     <ul type="square">
         <li>Acordar</li>
         <li>Banho</li>
@@ -100,20 +99,52 @@
                 <li>Lorem ipsum dolor</li>
                 <li>consectetur adipisicing elit.</li>
             </ol>
-
         </ol>
     </ul>
     <hr>
     <h2><mark>Juntando listas 1.0</mark></h2>
     <h3><mark id="juntandoListas">Linguagens Favoritas:</mark></h3>
-
+    <ol type="A">
+        <li><strong>Antigas:</strong></li>
+        <ol>
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Visual basic</li>
+        </ol>
+        <li><strong>Novas:</strong></li>
+        <ol>
+            <li>Python</li>
+            <li>Kotlin</li>
+            <li>PHP</li>
+        </ol>
+    </ol>
     <h3><mark id="juntandoListas">Jogos Favoritos:</mark></h3>
+    <ol type="A">
+        <li><strong>Nintendo:</strong></li>
+        <ol type="a">
+            <li>Jogo 1</li>
+            <li>Jogo 2</li>
+            <li>Jogo 3</li>
+        </ol>
+        <li><strong>SuperNintendo:</strong></li>
+        <ol type="a" start="4">
+            <li>Jogo 4</li>
+            <li>Jogo 5</li>
+            <li>Jogo 6</li>
+        </ol>
+        <li><strong>PS2:</strong></li>
+        <ol type="a" start="7">
+            <li>Jogo 7</li>
+            <li>Jogo 8</li>
+            <li>Jogo 9</li>
+        </ol>
+    </ol>
     <hr>
     <h1><mark>Lista de definição:</mark></h1>
     <dl>
-        <dt><mark><strong>HTML</strong></mark></dt>
+        <dt><mark id="juntandoListas"><strong>HTML</strong></mark></dt>
         <dd>Linguagem para criação de site</dd>
-        <dt><mark><strong>CSS</strong></mark></dt>
+        <dt><mark id="juntandoListas"><strong>CSS</strong></mark></dt>
         <dd>Linguagem para deixar as coisas bonitas</dd>
     </dl>
     <hr>
