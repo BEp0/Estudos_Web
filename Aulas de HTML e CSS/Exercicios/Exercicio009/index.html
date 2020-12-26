@@ -9,18 +9,25 @@
         body {
             font: 12pt Arial;
         }
+
+        mark#juntandoListas {
+            background-color: red;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
     <h1>Trabalhando com listas</h1>
     <h2><mark>Listas ordenadas...</mark></h2>
-    <p>A ordem faz diferença</p>
+    <ul type="square">
+        <li>A ordem faz diferença</li>
+    </ul>
 
     <hr>
     <h3>Lista Númerica</h3>
     <hr>
-    
+
     <p>O <strong>type</strong> <em>indica o tipo de lista</em>.</p>
     <p>E o <strong>start</strong> onde que a lista iniciará.</p>
     <ol type="1" start="0">
@@ -29,11 +36,11 @@
         <li>Banho</li>
         <li>Dentes</li>
     </ol>
-    
+
     <hr>
     <h3>Alfabética</h3>
     <hr>
-    
+
     <p>O <strong>A</strong> indica que a ordem vai ser alfabética e maiúscula.</p>
     <ol type="A">
         <li>Acordar</li>
@@ -50,8 +57,9 @@
     <hr>
     <h3>Romana</h3>
     <hr>
-    
-    <p>O <strong>I</strong> indica que a ordem vai ser em números romanos. Com a mesma lógica de maior e menos do <strong>A ou a</strong>.</p>
+
+    <p>O <strong>I</strong> indica que a ordem vai ser em números romanos. Com a mesma lógica de maior e menos do
+        <strong>A ou a</strong>.</p>
     <ol type="I">
         <li>Acordar</li>
         <li>Banho</li>
@@ -90,45 +98,16 @@
             <li>Lorem ipsum dolor</li>
             <ol type="a">
                 <li>Lorem ipsum dolor</li>
-                <li>consectetur adipisicing elit.</li>  
+                <li>consectetur adipisicing elit.</li>
             </ol>
-            
+
         </ol>
     </ul>
     <hr>
     <h2><mark>Juntando listas 1.0</mark></h2>
-    <h3>Linguagens Favoritas:</h3>
-    <ol>
-        <li>Antigas:</li>
-        <ol type="a">
-            <li>Clipper</li>
-            <li>Fortran</li>
-            <li>Visual basic</li>
-        </ol>
-        <li>Novas:</li>
-        <ol type="a">
-            <li>Python</li>
-            <li>Kotlin</li>
-            <li>PHP</li>
-    </ol>
-    <h3>Jogos Favoritos:</h3>
-    <ol>
-        <li>Nintendo</li>
-            <ul>
-                <li>jogo 1</li>
-                <li>Jogo 2</li>
-            </ul>
-        <li>Supernintendo</li>
-            <ul>
-                <li>Jogo 3</li>
-                <li>Jogo 4</li>
-            </ul>
-        <li>PS2</li>
-            <ul>
-                <li>jogo 5</li>
-                <li>jogo 6</li>
-            </ul>
-    </ol>
+    <h3><mark id="juntandoListas">Linguagens Favoritas:</mark></h3>
+
+    <h3><mark id="juntandoListas">Jogos Favoritos:</mark></h3>
     <hr>
     <h1><mark>Lista de definição:</mark></h1>
     <dl>
