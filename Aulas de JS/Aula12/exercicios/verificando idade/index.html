@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,43 @@
     <link rel="stylesheet" href="estilos.css">
 
 </head>
+
 <body>
-    
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano">
+            </p>
+            <p>Gênero:
+                <input type="radio" name="radgen" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radgen" id="femi">
+                <label for="femi">Feminino</label>
+                <input type="radio" name="radgen" id="nob">
+                <label for="nob">Outro</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+
+        <div id="resultado">
+
+        </div>
+
+    </section>
+    <footer>
+        <p>
+            <a href="https://github.com/BEp0" target="_blank">
+                &copy; Bernardo P S Souza
+            </a>
+        </p>
+    </footer>
     <script src="src.js"></script>
 </body>
+
 </html>
