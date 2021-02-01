@@ -16,6 +16,6 @@ function verificar(){
         } else {
             genero = 'Não Binário'
         }
-        res.innerHTML = `Detactamos ${genero} com ${idade} anos.`
+        res.innerHTML = `Detactamos ${genero} com ${idade} anos.`//14:47
     }
 }
