@@ -4,6 +4,7 @@ function verificar() {
     var fano = document.getElementById('txtano')
     var res = document.querySelector('div#resultado')
     if (fano.value.length == 0 || Number(fano.value) > ano) {
+        // para fano igual a zero e maior que o ano que é
         alert('[ERRO] Verifique e tente novamente')
     } else {
         var fradgen = document.getElementsByName('radgen')
