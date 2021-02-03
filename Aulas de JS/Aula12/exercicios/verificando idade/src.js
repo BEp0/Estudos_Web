@@ -1,15 +1,15 @@
 function verificar() {
-    var data = new Date()
-    var ano = data.getFullYear()
+    var data = new Date()// puxa data do sistema
+    var ano = data.getFullYear() // puxa da data. o ano completo
     var fano = document.getElementById('txtano')
     var res = document.querySelector('div#resultado')
     if (fano.value.length == 0 || Number(fano.value) > ano) {
         alert('[ERRO] Verifique e tente novamente')
     } else {
         var fradgen = document.getElementsByName('radgen')
-        var idade = ano - Number(fano.value)
+        var idade = ano - Number(fano.value) // valor do ano colocado em Numero(Number)
         var genero = ''
-        var img = document.createElement('img')
+        var img = document.createElement('img') // cria um elemento no HTML, com a tag na ''
         img.setAttribute('id', 'foto') // cria img com id foto
         if (fradgen[0].checked) {
             genero = 'Masculino'
