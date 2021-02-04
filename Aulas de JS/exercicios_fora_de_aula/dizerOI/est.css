@@ -1,0 +1,15 @@
+body{
+    font: normal 16pt Arial;
+    background-color: darkturquoise;
+}
+h1{
+    font: normal 18pt Arial;
+}
+header, section{
+    text-align: center;
+    background-color:white;
+    margin: auto;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px
+}
