@@ -17,6 +17,15 @@
         <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="fotogrande">
     </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Para reproduzir áudios no HTML5 use a tag &lt;audio&gt;</p>
+    <audio preload="metadata" controls loop>
+        <!--carrega o que estiver mais acima-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg" controls>
+        <source src="midia/happy-mistake.mp3" type="audio/ogg" controls>
+        <p>Seu navegador não pode reproduzir áudios, clique <a href="midia/happy-mistake.mp3" download="">aqui</a> para baixar</p>
+    </audio>
 </body>
 
 </html>
