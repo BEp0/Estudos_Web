@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,34 @@
         body {
             background-color: rgb(144, 144, 238);
             font: normal 20pt Arial;
+            color: white;
         }
-        h1 {
-            color: rgb(211, 152, 110);
-        }
-        p {
-            color: rgb(89, 226, 226);
-        }
+
+        /* Comentário */
     </style>
 </head>
+
 <body>
-    <h1>Título!</h1>
-    <p>Paragrafo!</p>
+    <h1>Tratamento de Dados!</h1>
+    <p>Aula 06 - manipular os dados</p> <!-- Comentário -->
     <script>
-      var n1 = Number.parseInt(prompt('Digite um número:')) // converte para um número inteiro
-      var n2 = Number.parseInt(prompt('Outro número:')) // para flutuante == Number.parseFloat
-      var s = n1 + n2 // soma os dois números
-      alert('A soma é ' + s) // Da a soma em um alerta
-      alert(`A soma é ${s}`) // Tamplate string
+        var nome = window.prompt('Qual o seu nome: ')
+        alert('Olá ' + nome)
+
+        // somando dois valores ...
+        // aqui as variáveis só aceitam inteiro, para fazer aceitar todo tipo, deve usar Number, somente
+        var n1 = Number.parseInt(prompt('Digite um número:')) // converte para um número inteiro
+        var n2 = Number.parseInt(prompt('Outro número:')) // para flutuante usamos Number.parseFloat
+        var s = n1 + n2 // soma os dois números
+
+        alert('A soma é ' + s) // Da a soma em um alerta
+        alert('Tipo antes da alteração: ' + typeof (s))
+        alert('Tipo depois da alteração usando String(): ' + typeof (String(s)))
+        
+        /* Usando Template Strings */
+        alert(`Assim usamos uma Template String: ${s}`) // Template string -> outra forma de se escrever nas strings (melhor...)
+        alert(`A soma de ${n1} e ${n2} é ${s}`) // método mais fácil
     </script>
 </body>
+
 </html>

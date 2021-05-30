@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,21 @@
         }
     </style>
 </head>
+
 <body>
+    <h1>Trabalhando com Strings: </h1>
     <script>
         var nome = prompt('NOME:')
-        write(`Seu nome tem ${nome.length} letras </br>`) // Diz quantidade de letras
-        document.write(`Em maiúsculas: ${nome.toUpperCase()}</br>`) // Passa tudo para MAIÚSCULAS
-        document.write(`Em minúsculas ${nome.toLowerCase()}</br>`) // Passa tudo para MINÚSCULAS
+        document.write(`Usando o .length: </br> - Seu nome tem ${nome.length} letras </br>`) // Diz quantidade de letras, mas não desconsidera os espaços
+        document.write(`Usando o .toUpperCase(): </br> - Em maiúsculas: ${nome.toUpperCase()}</br>`) // Passa tudo para MAIÚSCULAS
+        document.write(`Usando o .toLowerCase(): </br> - Em minúsculas ${nome.toLowerCase()}</br>`) // Passa tudo para MINÚSCULAS
         // </br> quebra para a próxima linha...
+
+        var salario = prompt('Salário: ')
+        var BR = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // converter para salário real
+        alert(BR)
+        document.write(`Formatando o salário: ${BR}`)
     </script>
 </body>
+
 </html>
