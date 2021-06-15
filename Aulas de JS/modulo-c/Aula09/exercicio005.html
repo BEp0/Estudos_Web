@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,33 +11,46 @@
             color: white;
             font: normal 18pt Arial;
         }
+
         strong {
             color: black;
         }
+
         h1 {
             color: black;
         }
-
     </style>
 </head>
+
 <body>
-    <h1>INICIANDO O DOM</h1>
-    <P>Aqui vai o resultado</P>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div id = 'msg'>Click em mim</div>
+    <h1>
+        Iniciando estudos em DOM
+    </h1>
+    <p id="msg">Aqui entra o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="mensagem">Clique em mim</div>
     <script>
-        window.document.write(document.charset) // DOM - mostra o UTF-8
-    // MARCA
-        var d = document.getElementById('msg') // pega a div msg
-        // var d = window.document.querySelector('div#msg')
-        var p1 = document.getElementsByTagName('p')[1] // pega 2° p
-        var corpo = document.body
-    //p1.style.color = 'black' // modifica a cor do p1 para preto
-        window.document.write(`<br>Está escrito assim: ${p1.innerText}`) // mostra o  p1, pega o texto sem filha
-        document.write(`<br>Porém, assim ele vem formatado ${p1.innerHTML}`) // formatado, pega tudo
-    // CORPO
-        //corpo.style.background = 'gray'
-               
+        window.document.write(`Podemos escrever no body desta forma!</br>Para mostrar o charset, que é a set de caracteres, fazemos assim: ${window.document.charset}!</br>`)
+        window.document.write(window.navigator.appName)
+        /*
+        window.navigator.appName // mostra como o navegador se comporta
+        window.document.URL // mostra a url acessada
+        */
+        var p1 = document.getElementsByTagName('p')[1] // pegamos o 1º paragrafo que apareceu, pq esse método usa todos
+        window.document.write(`</br>Está escrito assim: ${p1.innerText} `)
+        p1.style.color = 'blue' // muda o style em azul
+        document.write(p1.innerHTML) // innerHTML pega a formatação
+
+        // pegando elemento por id:
+        var d = document.getElementById('mensagem')
+        d.style.background = 'green'
+        //d.innerText = 'Olá' // muda o texto anterior
+
+        // usando o seletor: queryselector
+        var c = document.querySelector('p#msg')
+        c.style.background = 'blue'
+
     </script>
 </body>
+
 </html>
