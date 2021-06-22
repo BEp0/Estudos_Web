@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos D.O.M.</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="restart()">
+        Interaja ...
+    </div>
+    <script>
+
+        var area = document.getElementById('area')
+        var cont = 0
+
+        function clicar() {
+            //realiza quando o mouse clicar
+            if (cont == 1) {
+                area.innerText = 'Interaja ...'
+                area.style.background = 'rgb(42, 139, 42)' // volta para cor anterior
+                cont = 0
+            } else {
+                area.innerText = 'Clicou!'
+                area.style.background = 'red'
+                cont = 1
+            }
+        }
+
+        function restart() {
+            area.innerText = 'Saiu!'
+        }
+
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+
+    </script>
+</body>
+
+</html>

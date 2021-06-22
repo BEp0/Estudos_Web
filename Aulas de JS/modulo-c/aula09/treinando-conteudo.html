@@ -17,10 +17,13 @@
 <body>
     <h1>Assuntos da aula 09!</h1>
     <input type="text" id="texto">
-    <p>resposta</p>
+    <button onclick="resultado()">Confirmar</button>
+    <p id="rest">resposta</p>
     <script>
-        var texto = document.querySelector('input#texto')
-        
+        function resultado(){
+            var texto = document.getElementById('texto')
+            var resposta = document.getElementById('rest')
+        }
     </script>
 </body>
 
