@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treinando aula 10 - Eventos D.O.M.</title>
+    <style>
+      body {
+        font: normal 16pt Arial;
+        text-align: center;
+        
+      }
+
+      section {
+        width: 150px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+      }
+      div {
+        background-color: gray;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Eventos D.O.M.</h1>
+    <section>
+      <div class="caixa1" onmouseover="onenter('caixa1')" onmouseout="onout('caixa1')" ></div>
+      <div class="caixa2" onmouseover="onenter('caixa2')" onmouseout="onout('caixa2')" ></div> 
+      <div class="caixa3" onmouseover="onenter('caixa3')" onmouseout="onout('caixa3')" ></div>
+    </section>
+    <script>
+      var area1 = document.querySelector('div.caixa1')
+      var area2 = document.querySelector('div.caixa2')
+      var area3 = document.querySelector('div.caixa3')      
+      
+      function onenter(caixa) {
+        if (caixa == 'caixa1'){
+          area1.style.background = "red"
+        }
+        else if(caixa == 'caixa2'){
+          area2.style.background = "yellow"
+        }
+        else{
+          area3.style.background = "green"
+        }
+      }
+      function onout(caixa){
+        if (caixa == 'caixa1'){
+          area1.style.background = "gray"
+        }
+        else if(caixa == 'caixa2'){
+          area2.style.background = "gray"
+        }
+        else{
+          area3.style.background = "gray"
+        }
+      }
+    </script>
+  </body>
+</html>
