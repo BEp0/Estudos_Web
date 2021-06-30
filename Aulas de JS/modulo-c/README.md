@@ -1,6 +1,6 @@
 # Modulo C - Eventos D. O. M
 
-Vimos primeiramente como escrever no HTML usando o JS, através de `.write()`. Também, vimos como atribuir a uma variável a tag HTML usando `.querySelector()` e os diferentes "getElements" que existem. Com isso, podemos mudar o style de um parágrafo, por exemplo, mudando ele de vermelho para azul. Além disso, vimos no `.querySelector()` a diferença de usar "#" e ".", já que o primeiro é para id e o segundo para class.
+Vimos, primeiramente, como escrever no HTML usando o JS, através de `.write()`. Também, vimos como atribuir a uma variável a tag HTML usando `.querySelector()` e os diferentes "getElements" que existem. Com isso, podemos mudar o style de um parágrafo, por exemplo, mudando ele de vermelho para azul. Além disso, vimos no `.querySelector()` a diferença de usar "#" e ".", já que o primeiro é para id e o segundo para class.
 
 Na segunda aula vimos os eventos que podemos usar, alguns pois há vários.
 Alguns eventos de mouse que vimos:
